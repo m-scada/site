@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>M-SCADA</title>
+
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="stylesheets/github-light.css">
+  <meta name="viewport" content="width=device-width">
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <a href="/" class="logo">
+        <svg version="1.1" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100">
+          <g transform="matrix(1 0 0 1 20 5)" stroke-width="3">
+            <path d="M 0 6 L 0 18 L 8.52513 26.5251M 14.5 29 C 14.5 30.933 12.933 32.5 11 32.5 C 9.067 32.5 7.5 30.933 7.5 29 C 7.5 27.067 9.067 25.5 11 25.5 C 12.933 25.5 14.5 27.067 14.5 29"
+              transform="matrix(1 0 0 1 36 54)" fill="none" />
+            <path d="M 0 7 L 0 29.5M 3.5 33 C 3.5 34.933 1.933 36.5 0 36.5 C -1.933 36.5 -3.5 34.933 -3.5 33 C -3.5 31.067 -1.933 29.5 0 29.5 C 1.933 29.5 3.5 31.067 3.5 33"
+              transform="matrix(1 0 0 1 31 54)" fill="none" />
+            <path d="M 0 8 L 0 18 L 12.7228 22.7711M 19.5 24 C 19.5 25.933 17.933 27.5 16 27.5 C 14.067 27.5 12.5 25.933 12.5 24 C 12.5 22.067 14.067 20.5 16 20.5 C 17.933 20.5 19.5 22.067 19.5 24"
+              transform="matrix(1 0 0 1 41 49)" fill="none" />
+            <path d="M 0 6 L 0 18 L -8.63496 27.42M -7.5 30 C -7.5 31.933 -9.067 33.5 -11 33.5 C -12.933 33.5 -14.5 31.933 -14.5 30 C -14.5 28.067 -12.933 26.5 -11 26.5 C -9.067 26.5 -7.5 28.067 -7.5 30"
+              transform="matrix(1 0 0 1 26 54)" fill="none" />
+            <path d="M 0 3 L 0 13 L -13.7636 18.6674M -13.5 20 C -13.5 21.933 -15.067 23.5 -17 23.5 C -18.933 23.5 -20.5 21.933 -20.5 20 C -20.5 18.067 -18.933 16.5 -17 16.5 C -15.067 16.5 -13.5 18.067 -13.5 20"
+              transform="matrix(1 0 0 1 21 54)" fill="none" />
+            <path d="M 0 14 L 0 22 L 13.5 22M 20.5 22 C 20.5 23.933 18.933 25.5 17 25.5 C 15.067 25.5 13.5 23.933 13.5 22 C 13.5 20.067 15.067 18.5 17 18.5 C 18.933 18.5 20.5 20.067 20.5 22"
+              transform="matrix(1 0 0 1 46 39)" fill="none" />
+            <path d="M 0 10 L 0 17 L -12.5 17M -12.5 17 C -12.5 18.933 -14.067 20.5 -16 20.5 C -17.933 20.5 -19.5 18.933 -19.5 17 C -19.5 15.067 -17.933 13.5 -16 13.5 C -14.067 13.5 -12.5 15.067 -12.5 17"
+              transform="matrix(1 0 0 1 16 44)" fill="none" />
+            <path d="M 6.44365 52.0668 C 2.46243 46.5473 0 38.9223 0 30.5 C 0 13.6553 9.84974 0 22 0 C 34.1503 0 44 13.6553 44 30.5 C 44 38.9223 41.5376 46.5473 37.5563 52.0668 L 6.44365 52.0668"
+              transform="matrix(1 0 0 1 9 0)" />
+            <path d="M 28 13 C 28 20.1797 21.732 26 14 26 C 6.26801 26 0 20.1797 0 13 C 0 5.8203 6.26801 0 14 0 C 21.732 0 28 5.8203 28 13"
+              fill="rgb(255,255,255)" transform="matrix(1 0 0 1 31 24)" />
+            <path d="M 7 3.5 C 7 5.433 5.433 7 3.5 7 C 1.567 7 0 5.433 0 3.5 C 0 1.567 1.567 0 3.5 0 C 5.433 0 7 1.567 7 3.5"
+              transform="matrix(1 0 0 1 36 38)" fill="none" />
+            <path d="M 27 13 C 27 20.1797 20.9558 26 13.5 26 C 6.04416 26 0 20.1797 0 13 C 0 5.8203 6.04416 0 13.5 0 C 20.9558 0 27 5.8203 27 13"
+              fill="rgb(255,255,255)" transform="matrix(1 0 0 1 4 24)" />
+            <path d="M 7 3.5 C 7 5.433 5.433 7 3.5 7 C 1.567 7 0 5.433 0 3.5 C 0 1.567 1.567 0 3.5 0 C 5.433 0 7 1.567 7 3.5"
+              transform="matrix(1 0 0 1 19 38)" fill="none" />
+          </g>
+        </svg>
+      </a>
+      <h1>M-SCADA</h1>
+      <p>
+        Программый комплекс для построения систем мониторинга и диспетчеризации.
+      </p>
+      <hr>
+      <p class="view"><small>build 516.25929 (2018-12-18)</small></p>
+      <ul>
+        <li><a href="downloads/SetupMonitoringServer.exe">Download <strong>SetupServer</strong></a></li>
+        <li><a href="downloads/SetupMonitoringClient.exe">Download <strong>SetupClient</strong></a></li>
+      </ul>
+    </header>
+    <section>
+      <h3>
+        <a id="about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+        О Системе</h3>
+
+      <p>
+        M-SCADA ориентированна на работу в АСУТП и позволяет осуществлять сбор данных как непосредственно с датчиков
+        полевого уровня, так и с промышленных контроллеров и преобразователей по сети Ethernet.
+      </p>
+
+      <h3>
+        <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true"
+            class="octicon octicon-link"></span></a>Основные возможности</h3>
+      <p>
+        <ul>
+          <li>Подсистема хранения данных</li>
+          <li>Cредства создания и редактирования мнемосхем</li>
+          <li>Просмотр данных в виде графиков</li>
+          <li>Скриптовый алгоритмической модуль обработки данных</li>
+          <li>Web интерфейс для просмотра мнемосхем и графиков</li>
+        </ul>
+      </p>
+
+      <h3>
+        <a id="downloads" class="anchor" href="#downloads" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Примеры
+        проектов</h3>
+      <p>
+        <a href="downloads/project1.zip">Демонстрационный проект</a>
+      </p>
+
+      <h3>
+        <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true"
+            class="octicon octicon-link"></span></a>Контакты</h3>
+      <p>
+        <a href="mailto:m.scada.group@gmail.com">m.scada.group@gmail.com</a>
+      </p>
+
+    </section>
+
+    <footer>
+      <p></p>
+    </footer>
+  </div>
+
+  <script src="javascripts/scale.fix.js"></script>
+
+</body>
+
+</html>
